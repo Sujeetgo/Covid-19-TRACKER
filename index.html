@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+</head>
+<body>
+    <!-- <h1>Covid-19 Tracker</h1> -->
+    <header>
+        <div class="logo">
+            <img src="https://img.icons8.com/external-justicon-flat-justicon/64/null/external-coronavirus-coronavirus-justicon-flat-justicon.png" alt="logo">
+            <p>COVID-19 <br/>STATS</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://www.mohfw.gov.in/index.html">HOME</a></li>
+                <li><a href="https://worldhealthorg.shinyapps.io/covid/">ABOUT</a></li>
+                <!-- <li><a href="#">CONTACT</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main class="stats">
+        <div class="latest-report">
+            <div class="country">
+                <div class="name">Loading...</div>
+                <div class="change-country">change</div>
+                <div class="search-country hide">
+                    <div class="search-box">
+                        <input type="text"  id="search-input" placeholder="Search for Country...">
+                        <img src="https://freesvg.org/img/close-button.png" alt="close-icon" class="close">
+                        <div class="country-list">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="total-cases">
+                    <div class="title">Total Cases</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="recovered">
+                    <div class="title">Recovered</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="deaths">
+                    <div class="title">Deaths</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+        </div>
+        <div class="chart">
+            <canvas id="axes_line_chart">
+
+            </canvas>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>Copyright © 2023 Sujeet Goswami.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="countries.js"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+</body>
+</html>
